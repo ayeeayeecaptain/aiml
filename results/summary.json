@@ -1,0 +1,100 @@
+{
+  "model_A_order": {
+    "mlp_MAE": 0.9190688170040835,
+    "mlp_R2": 0.9904036716579434,
+    "kaiser_MAE": 19.714285714285715,
+    "kaiser_R2": -2.3073794205524556,
+    "kaiser_mean_overdesign": 19.714285714285715
+  },
+  "model_B1_direct_coefficients": {
+    "coeff_MSE": 7.310688787718875e-06,
+    "spec_pass_rate": 0.0,
+    "mean_ripple_gap_dB": 0.31914240143409234,
+    "mean_atten_gap_dB": -27.1133281360813
+  },
+  "model_B2_window_parameters": {
+    "margin_0": {
+      "spec_pass_rate": 0.8714285714285714,
+      "mean_order": 51.128571428571426
+    },
+    "margin_2": {
+      "spec_pass_rate": 0.9714285714285714,
+      "mean_order": 53.128571428571426
+    },
+    "margin_4": {
+      "spec_pass_rate": 1.0,
+      "mean_order": 55.114285714285714
+    },
+    "kaiser_formula_mean_order": 49.48571428571429,
+    "window_optimum_mean_order": 50.628571428571426,
+    "parks_mcclellan_mean_order": 29.67142857142857
+  },
+  "bayesian_optimisation": [
+    {
+      "spec": {
+        "wp": 0.3,
+        "ws": 0.4,
+        "Ap": 0.2,
+        "As": 60.0
+      },
+      "BO": {
+        "order": 86,
+        "beta": 5.815806293413199,
+        "ripple": 0.007092974625274667,
+        "atten": 61.96340345236676,
+        "cost": 44.0,
+        "feasible": true,
+        "evals": 52
+      },
+      "model_A_predicted_order": 48.788057361730495,
+      "kaiser_formula_order": 74,
+      "window_grid_search_optimum": 76,
+      "parks_mcclellan_min_order": 48,
+      "grid_search_evals_in_same_box": 506
+    },
+    {
+      "spec": {
+        "wp": 0.2,
+        "ws": 0.3,
+        "Ap": 0.5,
+        "As": 50.0
+      },
+      "BO": {
+        "order": 60,
+        "beta": 4.656148642557595,
+        "ripple": 0.023122370781472994,
+        "atten": 52.45787031903845,
+        "cost": 31.0,
+        "feasible": true,
+        "evals": 52
+      },
+      "model_A_predicted_order": 37.9427953790631,
+      "kaiser_formula_order": 60,
+      "window_grid_search_optimum": 58,
+      "parks_mcclellan_min_order": 38,
+      "grid_search_evals_in_same_box": 506
+    },
+    {
+      "spec": {
+        "wp": 0.45,
+        "ws": 0.55,
+        "Ap": 0.1,
+        "As": 70.0
+      },
+      "BO": {
+        "order": 88,
+        "beta": 6.925162829590428,
+        "ripple": 0.0027117432925941893,
+        "atten": 71.37405379880242,
+        "cost": 45.0,
+        "feasible": true,
+        "evals": 52
+      },
+      "model_A_predicted_order": 56.043699465038266,
+      "kaiser_formula_order": 88,
+      "window_grid_search_optimum": 88,
+      "parks_mcclellan_min_order": 58,
+      "grid_search_evals_in_same_box": 506
+    }
+  ]
+}
